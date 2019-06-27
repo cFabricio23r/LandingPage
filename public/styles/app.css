@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
+.Montserrat {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold; }
+
+#welcome {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bitlab-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.button-find {
+  border-radius: 4.2px; }
+
+.img-int {
+  z-index: 100;
+  display: inline-table; }
+
+.cont-int {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  justify-content: center; }
+
+.cont {
+  max-width: 800px; }
+
+.grid {
+  max-width: 800px; }
+
+.card-int {
+  position: relative;
+  overflow: hidden;
+  min-height: 100px;
+  background-color: white;
+  cursor: pointer; }
+  .card-int:hover .card-arrow {
+    opacity: 1;
+    border: 1px solid #00d2e5; }
+  .card-int:hover .card-arrow {
+    background-color: #00d2e5; }
+  .card-int:hover svg path {
+    fill: #fff; }
+  .card-int:hover .card-body {
+    background: #481ae7;
+    color: #ffffff; }
+
+.card-int .card-body {
+  padding: 1.25rem 1rem; }
+
+.bg-gray-int {
+  background-color: #ebebeb; }
+
+.img-fit {
+  object-fit: cover; }
+
+.bg-shape {
+  background-image: url(../images/shape-events.png);
+  padding: 80px 0 140px;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+/*# sourceMappingURL=app.css.map */
