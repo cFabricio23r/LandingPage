@@ -56,7 +56,6 @@
     z-index: 100
     display: inline-table
     @media screen and(max-width: 1200px) 
-        // bottom: -300px
         display: none
         
     @media screen and(max-width: 768px) 
@@ -78,6 +77,15 @@
             top: 0
             bottom: 0
             z-index: -1
+    img 
+        max-width: 90%
+        @media screen and(max-width: 1200px) 
+        max-width: 80%
+        
+        @media screen and(max-width: 992px) 
+        max-width: 100%
+        
+    
         
 
 .cont-int 
@@ -103,12 +111,6 @@
 
     .cont
         max-width: 800px
-        //   @media screen and(min-width: 1570px) 
-        //     justify-content: center
-        //  
-        //   @media screen and(max-width: 1570px) 
-        //     justify-content: flex-end
-        //  
         @media screen and(max-width: 1400px) 
             max-width: 700px
 
@@ -168,6 +170,17 @@
         background-size: 800px
         background-position-y: 200px
 
+.card-co
+    transition: all 0.2s ease
+    &:hover 
+        transform: translateY(-3px)
+        box-shadow: 2px 9px 50px hsla(0, 0, 0, 0.1), -2px 9px 60px hsla(0, 0, 0, 0.1)
+
+        .card-fit
+            transition: all 0.2s ease
+            transform: scale(1.05)
+    
+  
      
     
     

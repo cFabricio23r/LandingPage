@@ -16,7 +16,26 @@ $(document).ready(function() {
 
         }
     });
-    $("Toggle").click(function() {
-        $("#text-nav").css("display", "block")
+    $("#Toggle").click(function() {
+        $("#text-nav").removeClass("hidden")
+        $("#text-nav").find("h3").removeClass("hidden")
+        $("#navbar").css("background-color", "white");
+        $("#logo-bitlab").css("fill", "#4849b0")
+        $("#text-nav").removeClass("text-white")
+        $("#text-nav").addClass("text-black")
+        $("#Toggle").removeClass("md:hidden")
+        $("#Toggle").addClass("hidden")
+        $("#Toggle-Close").removeClass("hidden")
+    });
+    $("#Toggle-Close").click(function() {
+        $("#text-nav").addClass("hidden")
+        $("#text-nav").find("h3").addClass("hidden")
+        $("#navbar").css("background-color", "transparent");
+        $("#logo-bitlab").css("fill", "white")
+        $("#text-nav").removeClass("text-black")
+        $("#text-nav").addClass("text-white")
+        $("#Toggle").addClass("md:hidden")
+        $("#Toggle").removeClass("hidden")
+        $("#Toggle-Close").addClass("hidden")
     });
 });
