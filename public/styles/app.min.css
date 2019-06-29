@@ -1,11 +1,64 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700);
 .Montserrat{font-family:Montserrat;font-style:normal;font-weight:700}
-#welcome{background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/bitlab-bg.png);background-size:cover;background-position:center;background-repeat:no-repeat}
+#Toggle{position:relative;z-index:9999;-webkit-user-select:none;margin-right:5px;cursor:pointer;transition:.8s all ease}
+#Toggle span{display:block;width:33px;height:5px;margin-bottom:5px;position:relative;background:#fff;border-radius:3px;z-index:9999;transition:.8s all ease}
+#navbar{transition:.8s all ease;z-index:10000}
+#logo-bitlab{transition:.8s all ease}
+.container{width:100%;margin-right:auto;margin-left:auto;padding-right:1rem;padding-left:1rem}
+#welcome{background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/bitlab-bg.png);background-size:cover;background-position:center;background-repeat:no-repeat}
+@media screen and (max-width:768px){
+#welcome .icon{max-width:350px;width:100%}
+#welcome .icon .icon-2{max-width:250px;width:100%}
+#welcome .icon .icon-3{max-width:500px;width:100%}
+}
+@media screen and (max-width:500px){
+#welcome .icon{max-width:250px;width:100%}
+#welcome .icon .icon-2{max-width:200px;width:100%}
+}
 .button-find{border-radius:4.2px}
+.int{overflow:hidden}
+@media screen and (max-width:1200px){
+.int .int-cont{flex-direction:column-reverse;position:relative;margin-left:0!important}
+}
+@media screen and (max-width:768px){
+.int .int-cont{margin-bottom:0}
+}
+.int .int-cont .grid{max-width:800px}
 .img-int{z-index:100;display:inline-table}
-.cont-int{padding-top:200px;padding-bottom:200px;justify-content:center}
-.cont{max-width:800px}
-.grid{max-width:800px}
+@media screen and (max-width:1200px){
+.img-int{display:none}
+}
+@media screen and (max-width:768px){
+.img-int{display:none}
+}
+.img-int .img-cont{position:relative;display:inline-block}
+.img-int .img-cont:before{content:"";display:block;position:absolute;width:40px;height:80%;background-color:transparent;border:1px solid purple;vertical-align:middle;right:-30px;margin:auto 0;top:0;bottom:0;z-index:-1}
+.cont-int{padding-top:200px;padding-bottom:200px}
+@media screen and (min-width:1570px){
+.cont-int{justify-content:center}
+}
+@media screen and (max-width:1570px){
+.cont-int{justify-content:flex-end}
+}
+@media screen and (max-width:1200px){
+.cont-int{margin-left:0;width:90%;margin-left:auto}
+}
+@media screen and (max-width:768px){
+.cont-int{padding:100px 15%;width:100%}
+}
+@media screen and (max-width:500px){
+.cont-int{padding:100px 40px;width:100%}
+}
+.cont-int .cont{max-width:800px}
+@media screen and (max-width:1400px){
+.cont-int .cont{max-width:700px}
+}
+@media screen and (max-width:1320px){
+.cont-int .cont{max-width:600px}
+}
+@media screen and (max-width:1200px){
+.cont-int .cont{max-width:100%!important;margin-left:0!important}
+}
 .card-int{position:relative;overflow:hidden;min-height:100px;background-color:#fff;cursor:pointer}
 .card-int:hover .card-arrow{opacity:1;border:1px solid #00d2e5}
 .card-int:hover .card-arrow{background-color:#00d2e5}
@@ -15,3 +68,9 @@
 .bg-gray-int{background-color:#ebebeb}
 .img-fit{object-fit:cover}
 .bg-shape{background-image:url(../images/shape-events.png);padding:80px 0 140px;background-repeat:no-repeat;background-position:center}
+@media screen and (max-width:768px){
+.bg-shape{background-size:1000px;background-position-y:300px}
+}
+@media screen and (max-width:500px){
+.bg-shape{background-size:800px;background-position-y:200px}
+}
