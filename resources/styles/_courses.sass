@@ -1,0 +1,67 @@
+.check-cont
+    display: block
+    position: relative
+    padding-left: 35px
+    margin-bottom: 12px
+    cursor: pointer
+    font-size: 22px
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+check-cont input 
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    height: 0
+    display: none
+    width: 0
+
+.check-mark 
+    position: absolute
+    top: 0
+    left: 0
+    height: 25px
+    width: 25px
+    background-color: #eee
+
+check-cont:hover input ~ .check-kmark 
+    background-color: #ccc
+
+.check-cont input:checked ~ .check-mark 
+    background-color: #2196F3
+
+
+.check-mark:after 
+    content: ""
+    position: absolute
+    display: none
+
+
+.check-cont input:checked ~ .check-mark:after 
+    display: block
+
+
+.check-cont .check-mark:after 
+    left: 9px
+    top: 5px
+    width: 5px
+    height: 10px
+    border: solid white
+    border-width: 0 3px 3px 0
+    -webkit-transform: rotate(45deg)
+    -ms-transform: rotate(45deg)
+    transform: rotate(45deg)
+
+.active-co:hover
+    border-bottom-width: 2px
+    border-color: #4849b0
+    a
+        color: #4849b0
+
+.active-click   
+    border-bottom-width: 2px
+    border-color: #4849b0
+    a
+        color: #4849b0

@@ -1,13 +1,49 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700);
 .Montserrat{font-family:Montserrat;font-style:normal;font-weight:700}
+.purple{color:#481ae7}
+.button-purple{border-color:#481ae7!important;color:#481ae7!important}
+.button-purple:hover{background-color:#481ae7!important;color:#fff!important}
 #Toggle{position:relative;z-index:9999;-webkit-user-select:none;margin-right:5px;cursor:pointer;transition:.8s all ease}
 #Toggle span{display:block;width:33px;height:5px;margin-bottom:5px;position:relative;background:#fff;border-radius:3px;z-index:9999;transition:.8s all ease}
+#Toggle-2{position:relative;z-index:9999;-webkit-user-select:none;margin-right:5px;cursor:pointer;transition:.8s all ease}
+#Toggle-2 span{display:block;width:33px;height:5px;margin-bottom:5px;position:relative;background:#4849b0;border-radius:3px;z-index:9999;transition:.8s all ease}
 #Toggle-Close{z-index:9999;-webkit-user-select:none;user-select:none;margin-right:5px;cursor:pointer}
 #Toggle-Close span{display:block;width:33px;height:4px;margin-bottom:5px;opacity:1;background:#4849b0;border-radius:3px;z-index:9999;transform-origin:4px 0;transform:rotate(45deg) translate(2px,-1px);transition:transform .5s cubic-bezier(.77,.2,.05,1),background .5s cubic-bezier(.77,.2,.05,1),opacity .55s ease}
 #Toggle-Close span:nth-last-child(2){opacity:0;transform:rotate(0) scale(.2,.2)}
 #Toggle-Close span:nth-last-child(1){transform:rotate(-45deg) translate(0,-1px)}
+#Toggle-Close-2{z-index:9999;-webkit-user-select:none;user-select:none;margin-right:5px;cursor:pointer}
+#Toggle-Close-2 span{display:block;width:33px;height:4px;margin-bottom:5px;opacity:1;background:#4849b0;border-radius:3px;z-index:9999;transform-origin:4px 0;transform:rotate(45deg) translate(2px,-1px);transition:transform .5s cubic-bezier(.77,.2,.05,1),background .5s cubic-bezier(.77,.2,.05,1),opacity .55s ease}
+#Toggle-Close-2 span:nth-last-child(2){opacity:0;transform:rotate(0) scale(.2,.2)}
+#Toggle-Close-2 span:nth-last-child(1){transform:rotate(-45deg) translate(0,-1px)}
 #navbar{transition:.8s all ease;z-index:10000}
 #logo-bitlab{transition:.8s all ease}
+#navbar-2{background-color:#fff;z-index:10000}
+#partner{background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/Path-5.jpg);background-size:cover;background-position:center;background-repeat:no-repeat}
+@media screen and (max-width:768px){
+#partner .icon{max-width:350px;width:100%}
+#partner .icon .icon-2{max-width:250px;width:100%}
+#partner .icon .icon-3{max-width:500px;width:100%}
+}
+@media screen and (max-width:500px){
+#partner .icon{max-width:250px;width:100%}
+#partner .icon .icon-2{max-width:200px;width:100%}
+}
+@media (min-width:768px){
+.font-boost{font-size:7rem}
+}
+.img-part{filter:brightness(50%)}
+.check-cont{display:block;position:relative;padding-left:35px;margin-bottom:12px;cursor:pointer;font-size:22px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+check-cont input{position:absolute;opacity:0;cursor:pointer;height:0;display:none;width:0}
+.check-mark{position:absolute;top:0;left:0;height:25px;width:25px;background-color:#eee}
+check-cont:hover input~.check-kmark{background-color:#ccc}
+.check-cont input:checked~.check-mark{background-color:#2196f3}
+.check-mark:after{content:"";position:absolute;display:none}
+.check-cont input:checked~.check-mark:after{display:block}
+.check-cont .check-mark:after{left:9px;top:5px;width:5px;height:10px;border:solid #fff;border-width:0 3px 3px 0;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
+.active-co:hover{border-bottom-width:2px;border-color:#4849b0}
+.active-co:hover a{color:#4849b0}
+.active-click{border-bottom-width:2px;border-color:#4849b0}
+.active-click a{color:#4849b0}
 .container{width:100%;margin-right:auto;margin-left:auto;padding-right:1rem;padding-left:1rem}
 #welcome{background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/bitlab-bg.png);background-size:cover;background-position:center;background-repeat:no-repeat}
 @media screen and (max-width:768px){

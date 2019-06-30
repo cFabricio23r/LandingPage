@@ -1,0 +1,21 @@
+<svg width="67" height="53" viewBox="0 0 67 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="validacion">
+<g id="Group">
+<rect id="Rectangle" x="52.3" y="4.40002" width="1.5" height="1.5" fill="black"/>
+<rect id="Rectangle_2" x="45.5" y="4.40002" width="1.5" height="1.5" fill="black"/>
+<rect id="Rectangle_3" x="48.8999" y="4.40002" width="1.5" height="1.5" fill="black"/>
+<rect id="Rectangle_4" x="6" y="4.40002" width="35.8" height="1.5" fill="black"/>
+<path id="Path" fill-rule="evenodd" clip-rule="evenodd" d="M52 37.9L49.3 35.2L48.3 36.3L52 40L60.7 31.3L59.7 30.3L52 37.9Z" fill="black"/>
+<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M58.3 23.8C63 25.4 66.3 29.7 66.3 34.9C66.3 40 62.9 44.4 58.3 46V52.3H0.800049V0.599976H58.3V23.8ZM56.8 8.19998V2.09998H2.30005V8.19998H56.8ZM56.8 50.9H2.30005V9.69998H56.8V23.3C56.1 23.2 55.3 23.1 54.5 23.1C48 23.1 42.7001 28.4 42.7001 34.9C42.7001 41.4 48 46.7 54.5 46.7C55.2192 46.7 55.8576 46.6192 56.5605 46.5302L56.8 46.5V50.9ZM44.2001 34.8C44.2001 40.5 48.8 45.1 54.5 45.1C60.2001 45.1 64.8 40.5 64.8 34.8C64.8 29.1 60.2001 24.5 54.5 24.5C48.8 24.5 44.2001 29.1 44.2001 34.8Z" fill="black"/>
+<rect id="Rectangle_5" x="18.7" y="15.2" width="32.2" height="1.5" fill="black"/>
+<rect id="Rectangle_6" x="18.7" y="19.1" width="22.4" height="1.5" fill="black"/>
+<path id="Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M15.7 23.2H5.19995V12.6H15.7V23.2ZM14.2 14.1H6.69995V21.6H14.2V14.1Z" fill="black"/>
+<rect id="Rectangle_7" x="18.7" y="27.7" width="23.2" height="1.5" fill="black"/>
+<rect id="Rectangle_8" x="18.7" y="31.5" width="17.4" height="1.5" fill="black"/>
+<path id="Shape_3" fill-rule="evenodd" clip-rule="evenodd" d="M15.7 35.6H5.19995V25.1H15.7V35.6ZM14.2 26.6H6.69995V34.1H14.2V26.6Z" fill="black"/>
+<rect id="Rectangle_9" x="18.7" y="40.2" width="23.2" height="1.5" fill="black"/>
+<rect id="Rectangle_10" x="18.7" y="44" width="17.4" height="1.5" fill="black"/>
+<path id="Shape_4" fill-rule="evenodd" clip-rule="evenodd" d="M15.7 48.1H5.19995V37.6H15.7V48.1ZM14.2 39.1H6.69995V46.6H14.2V39.1Z" fill="black"/>
+</g>
+</g>
+</svg>

@@ -38,4 +38,117 @@ $(document).ready(function() {
         $("#Toggle").removeClass("hidden")
         $("#Toggle-Close").addClass("hidden")
     });
+
+    $("#Toggle-2").click(function() {
+        $("#text-nav-2").removeClass("hidden")
+        $("#text-nav-2").find("h3").removeClass("hidden")
+        $("#navbar").css("background-color", "white");
+        $("#Toggle-2").removeClass("md:hidden")
+        $("#Toggle-2").addClass("hidden")
+        $("#Toggle-Close-2").removeClass("hidden")
+    });
+    $("#Toggle-Close-2").click(function() {
+        $("#text-nav-2").addClass("hidden")
+        $("#text-nav-2").find("h3").addClass("hidden")
+        $("#navbar").css("background-color", "transparent");
+        $("#Toggle-2").addClass("md:hidden")
+        $("#Toggle-2").removeClass("hidden")
+        $("#Toggle-Close-2").addClass("hidden")
+    });
+
+    //Courses sort checbox
+    $('input[name="gratis"]').click(function() {
+        if ($('input[name="gratis"]').is(":checked")) {
+            if ($('input[name="pagado"]').is(":checked")) {
+                $(".gratis").show();
+                $(".pagado").show();
+            } else {
+                $(".gratis").show();
+                $(".pagado").hide();
+            }
+        } else if ($('input[name="gratis"]').prop("checked") == false) {
+            if ($('input[name="pagado"]').prop("checked") == false) {
+                $(".gratis").show();
+                $(".pagado").show();
+            } else {
+                $(".gratis").hide();
+            }
+        }
+    });
+    $('input[name="pagado"]').click(function() {
+        if ($('input[name="pagado"]').prop("checked") == true) {
+            if ($('input[name="gratis"]').is(":checked")) {
+                $(".gratis").show();
+                $(".pagado").show();
+            } else {
+                $(".gratis").hide();
+                $(".pagado").show();
+            }
+        } else if ($('input[name="pagado"]').prop("checked") == false) {
+            if ($('input[name="gratis"]').prop("checked") == false) {
+                $(".gratis").show();
+                $(".pagado").show();
+            } else {
+                $(".pagado").hide();
+            }
+        }
+    });
+
+    //Courses sort checbox
+    $("#ds-a").click(function() {
+        $("#ds-a").addClass("active-click")
+        $("#ed-a").removeClass("active-click")
+        $("#d-a").removeClass("active-click")
+        $("#e-a").removeClass("active-click")
+
+        $(".DS").show();
+        $(".ED").hide();
+        $(".D").hide();
+        $(".E").hide();
+
+        $('input[name="pagado"]').prop("checked", false);
+        $('input[name="gratis"]').prop("checked", false);
+    });
+    $("#ed-a").click(function() {
+        $("#ed-a").addClass("active-click")
+        $("#d-a").removeClass("active-click")
+        $("#ds-a").removeClass("active-click")
+        $("#d-a").removeClass("active-click")
+
+        $(".DS").hide();
+        $(".ED").show();
+        $(".D").hide();
+        $(".E").hide();
+
+        $('input[name="pagado"]').prop("checked", false);
+        $('input[name="gratis"]').prop("checked", false);
+    });
+    $("#d-a").click(function() {
+        $("#d-a").addClass("active-click")
+        $("#ds-a").removeClass("active-click")
+        $("#ed-a").removeClass("active-click")
+        $("#e-a").removeClass("active-click")
+
+        $(".DS").hide();
+        $(".ED").hide();
+        $(".D").show();
+        $(".E").hide();
+
+        $('input[name="pagado"]').prop("checked", false);
+        $('input[name="gratis"]').prop("checked", false);
+    });
+    $("#e-a").click(function() {
+        $("#e-a").addClass("active-click")
+        $("#ds-a").removeClass("active-click")
+        $("#ed-a").removeClass("active-click")
+        $("#d-a").removeClass("active-click")
+
+        $(".DS").hide();
+        $(".ED").hide();
+        $(".D").hide();
+        $(".E").show();
+
+        $('input[name="pagado"]').prop("checked", false);
+        $('input[name="gratis"]').prop("checked", false);
+    });
 });
