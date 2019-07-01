@@ -44,7 +44,14 @@ check-cont:hover input~.check-kmark{background-color:#ccc}
 .active-co:hover a{color:#4849b0}
 .active-click{border-bottom-width:2px;border-color:#4849b0}
 .active-click a{color:#4849b0}
-.container{width:100%;margin-right:auto;margin-left:auto;padding-right:1rem;padding-left:1rem}
+#scolar{background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/bg-everyone.png);background-size:cover;background-position:center;background-repeat:no-repeat}
+.hover-div:hover span svg{fill:#481ae7}
+.hover-div:hover .hover{color:#481ae7}
+.becas{width:66.666667%;padding-left:4rem;margin-left:8rem;margin-right:.5rem;margin-bottom:0;width:100%}
+.lab-card{position:absolute;z-index:99999;bottom:80px}
+.lab-co{padding-top:80px}
+#skills{background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/img_moreskills.jpg);background-size:cover;background-position:center;background-repeat:no-repeat}
+.container{padding-right:1rem;padding-left:1rem}
 #welcome{background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/bitlab-bg.png);background-size:cover;background-position:center;background-repeat:no-repeat}
 @media screen and (max-width:768px){
 #welcome .icon{max-width:350px;width:100%}
@@ -118,3 +125,4 @@ check-cont:hover input~.check-kmark{background-color:#ccc}
 .card-co{transition:all .2s ease}
 .card-co:hover{transform:translateY(-3px);box-shadow:2px 9px 50px rgba(0,0,0,.1),-2px 9px 60px rgba(0,0,0,.1)}
 .card-co:hover .card-fit{transition:all .2s ease;transform:scale(1.05)}
+.card-co:hover .email{color:#63b3ed}

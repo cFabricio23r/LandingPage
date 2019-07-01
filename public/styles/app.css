@@ -206,10 +206,40 @@ check-cont:hover input ~ .check-kmark {
   .active-click a {
     color: #4849b0; }
 
+#scolar {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bg-everyone.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.hover-div:hover span svg {
+  fill: #481ae7; }
+.hover-div:hover .hover {
+  color: #481ae7; }
+
+.becas {
+  width: 66.666667%;
+  padding-left: 4rem;
+  margin-left: 8rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  width: 100%; }
+
+.lab-card {
+  position: absolute;
+  z-index: 99999;
+  bottom: 80px; }
+
+.lab-co {
+  padding-top: 80px; }
+
+#skills {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/img_moreskills.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
 .container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
   padding-right: 1rem;
   padding-left: 1rem; }
 
@@ -366,5 +396,7 @@ check-cont:hover input ~ .check-kmark {
     .card-co:hover .card-fit {
       transition: all 0.2s ease;
       transform: scale(1.05); }
+    .card-co:hover .email {
+      color: #63b3ed; }
 
 /*# sourceMappingURL=app.css.map */
