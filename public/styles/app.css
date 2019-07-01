@@ -239,6 +239,25 @@ check-cont:hover input ~ .check-kmark {
   background-position: center;
   background-repeat: no-repeat; }
 
+#suscribe {
+  background-image: url(../images/img_suscribe.png);
+  background-color: #ebebeb;
+  background-size: contain;
+  background-position: start;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 1200px) {
+    #suscribe {
+      background-image: url(../images/img_suscribe.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; } }
+  @media screen and (max-width: 768px) {
+    #suscribe {
+      background-image: url(../images/img_course_emprendimiento@1x.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; } }
+
 .container {
   padding-right: 1rem;
   padding-left: 1rem; }

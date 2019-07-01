@@ -51,6 +51,13 @@ check-cont:hover input~.check-kmark{background-color:#ccc}
 .lab-card{position:absolute;z-index:99999;bottom:80px}
 .lab-co{padding-top:80px}
 #skills{background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/img_moreskills.jpg);background-size:cover;background-position:center;background-repeat:no-repeat}
+#suscribe{background-image:url(../images/img_suscribe.png);background-color:#ebebeb;background-size:contain;background-position:start;background-repeat:no-repeat}
+@media screen and (max-width:1200px){
+#suscribe{background-image:url(../images/img_suscribe.png);background-size:cover;background-position:center;background-repeat:no-repeat}
+}
+@media screen and (max-width:768px){
+#suscribe{background-image:url(../images/img_course_emprendimiento@1x.jpg);background-size:cover;background-position:center;background-repeat:no-repeat}
+}
 .container{padding-right:1rem;padding-left:1rem}
 #welcome{background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/bitlab-bg.png);background-size:cover;background-position:center;background-repeat:no-repeat}
 @media screen and (max-width:768px){
