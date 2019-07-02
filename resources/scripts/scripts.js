@@ -151,4 +151,16 @@ $(document).ready(function() {
         $('input[name="pagado"]').prop("checked", false);
         $('input[name="gratis"]').prop("checked", false);
     });
+
+
+    //Collapse List
+    $(".toggle-hide").click(function() {
+        if ($(this).find("div.hidden").hasClass("hidden")) {
+            $(this).find("div.hidden").addClass("hidden-no");
+            $(this).find("div.hidden").removeClass("hidden");
+        } else {
+            $(this).find("div.hidden-no").addClass("hidden");
+            $(this).find("div.hidden").removeClass("hidden-no");
+        }
+    });
 });

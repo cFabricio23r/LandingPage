@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bitlab - Digital Skills Academy</title>
+    <meta name="description" content="Sitio web de academia con cursos web">
+    <meta name="keywords">
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
+    <link href="../public/styles/app.min.css" rel="stylesheet">
+    <link data-n-head="true" rel="icon" type="image/png" href="../public/images/favicon.png">
+</head>
+
+<body>
+    <div class="flex flex-col justify-between min-h-screen">
+        <section id="navbar" class="fixed flex items-center w-full md:py-0 py-6">
+            <div class="container m-auto h-full flex flex-col md:flex-row justify-between md:items-center flex-wrap">
+                <div class="flex w-full md:w-1/2 flex-row justify-between items-center">
+                    <a href="">
+                        <svg class="h-6" viewBox="0 0 494 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Group</title>
+                            <desc>Created with Sketch.</desc>
+                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="logo-bitlab" fill="#FFFFFF">
+                                    <g id="Group">
+                                        <path d="M55.4851,74.1301 C55.4851,61.6011 51.7561,58.4691 38.9291,58.3191 L22.2241,58.3191 L22.2241,88.1511 L39.5261,88.1511 C51.9061,88.1511 55.4851,85.6151 55.4851,74.1301 M37.5871,17.1531 L22.2241,17.1531 L22.2241,43.2551 L38.7801,43.2551 C49.8171,43.2551 53.2481,40.5701 53.2481,29.9801 C53.2481,19.5391 49.5191,17.1531 37.5871,17.1531 M78.3061,78.4551 C78.3061,99.6351 68.0141,105.3031 43.4041,105.3031 C23.7141,105.3031 12.9761,105.1541 0.0001,104.1101 L0.0001,1.1931 C11.6321,0.1491 21.3291,9.99999999e-05 38.6311,9.99999999e-05 C65.4791,9.99999999e-05 75.0251,5.6681 75.0251,26.8481 C75.0251,41.6141 69.8041,49.2211 56.9771,50.4141 L56.9771,51.0111 C72.7881,52.3531 78.3061,62.0481 78.3061,78.4551" id="Fill-1"></path>
+                                        <polygon id="Fill-3" points="91.492 105.304 114.164 105.304 114.164 0.001 91.492 0.001"></polygon>
+                                        <polygon id="Fill-5" points="211.6218 18.4953 180.8958 18.4953 180.8958 105.3033 158.0748 105.3033 158.0748 18.4953 127.3498 18.4953 127.3498 0.0003 211.6218 0.0003"></polygon>
+                                        <path d="M247.4792,78.758 C247.4792,84.128 249.7162,86.365 255.5332,86.365 L290.8832,86.365 L291.9272,103.667 C278.2052,105.158 262.9912,105.307 248.3742,105.307 C231.8182,105.307 224.8072,96.06 224.8072,83.382 L224.8072,7.10542736e-15 L247.4792,7.10542736e-15 L247.4792,78.758 Z" id="Fill-6"></path>
+                                        <path d="M366.2673,59.5129 C366.2673,59.5129 355.9743,20.2849 355.5273,17.1529 L351.4993,17.1529 L340.6123,59.5129 L366.2673,59.5129 Z M371.1893,77.1129 L335.8393,77.1129 L328.3813,105.3039 L305.1133,105.3039 L334.7943,5.9659 C335.6903,2.2379 338.9713,-9.99999999e-05 342.7013,-9.99999999e-05 L364.1783,-9.99999999e-05 C368.0563,-9.99999999e-05 371.1893,2.2379 372.0833,5.9659 L401.7653,105.3039 L378.6463,105.3039 L371.1893,77.1129 Z" id="Fill-7"></path>
+                                        <path d="M470.4363,74.1301 C470.4363,61.6011 466.7073,58.4691 453.8803,58.3191 L437.1753,58.3191 L437.1753,88.1511 L454.4773,88.1511 C466.8573,88.1511 470.4363,85.6151 470.4363,74.1301 M452.5383,17.1531 L437.1753,17.1531 L437.1753,43.2551 L453.7313,43.2551 C464.7683,43.2551 468.1993,40.5701 468.1993,29.9801 C468.1993,19.5391 464.4703,17.1531 452.5383,17.1531 M493.2573,78.4551 C493.2573,99.6351 482.9653,105.3031 458.3553,105.3031 C438.6653,105.3031 427.9273,105.1541 414.9513,104.1101 L414.9513,1.1931 C426.5833,0.1491 436.2803,9.99999999e-05 453.5823,9.99999999e-05 C480.4303,9.99999999e-05 489.9763,5.6681 489.9763,26.8481 C489.9763,41.6141 484.7553,49.2211 471.9283,50.4141 L471.9283,51.0111 C487.7393,52.3531 493.2573,62.0481 493.2573,78.4551" id="Fill-8"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <button id="Toggle" class="md:hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button id="Toggle-Close" class="hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div id="text-nav" class="md:flex md:w-1/2 md:items-center md:h-auto justify-between h-screen text-white hidden">
+                    <h3 class="text-4xl p-8 text-black font-bold Montserrat hidden">
+                        ¿Qué deseas
+                        <br> conocer?
+                    </h3>
+                    <a class="block p-6 text-xl md:border-b-4 md:border-transparent hover:border-teal-300" href="">
+                        Aliados
+                    </a>
+                    <a class="block p-6 text-xl md:border-b-4 md:border-transparent hover:border-teal-300" href="">
+                        Cursos
+                    </a>
+                    <a class="block p-6 text-xl md:border-b-4 md:border-transparent hover:border-teal-300" href="">
+                        Talleres
+                    </a>
+                    <a class="block p-6 text-xl md:border-b-4 md:border-transparent hover:border-teal-300" href="">
+                        Becas
+                    </a>
+                    <a class="block p-6 text-xl md:border-b-4 md:border-transparent hover:border-teal-300" href="">
+                        Eventos
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+        <section id="course-de" class="flex flex-col lg:flex-row items-center relative">
+            <div class="container m-auto">
+                <div class="flex relative">
+                    <div class="w-full lg:px-0 lg:mb-0 mb-16 md:px-8 lg:w-1/2">
+                        <div class="text-white md:pr-16">
+                            <h2 class="text-4xl mb-4 Montserrat">
+                                Desarrollo Web - Frontend
+                            </h2>
+                            <div class="flex flex-col sm:flex-row mb-6 sm:items-center sm:justify-around flex-wrap sm:-ml-10">
+                                <div class="text-lg flex items-center font-bold mb-6">
+                                    <img src="../public/images/calendar.png" alt="" class="mr-4 h-6"> 3 marzo 2019
+                                </div>
+                                <div class="text-lg flex items-center font-bold mb-6">
+                                    <img src="../public/images/clock.png" alt="" class="mr-4 h-6"> 3 meses
+                                </div>
+                                <div class="text-lg flex items-center font-bold mb-6">
+                                    <img src="../public/images/card.png" alt="" class="mr-4 h-6"> $600
+                                </div>
+                            </div>
+                            <p class="text-md">
+                                En este curso, el estudiante aprenderá los fundamentos básicos del desarrollo web Frontend, para construir con éxito un producto web.
+                                <br>
+                                <br> Al ser un curso teórico práctico el estudiante aplicará los conocimientos adquiridos los cuales le permitirán desarrollar un sitio web, capaces de consumir servicios Web y presentar datos al usuario de forma atractiva,
+                                bien estructurada y óptima; siguiendo los buenos principios de programación y utilizando tecnologías de vanguardia disponibles para esta plataforma.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:block lg:absolute hidden md:pt-16 px-8 md:px-0" style="right: 0;">
+                <img src="../public/images/img_workshop and course.png" alt="">
+            </div>
+        </section>
+        <section class="py-40 flex flex-col lg:flex-row items-center relative" id="aprenderas-hero">
+            <div class="container m-auto">
+                <div class="flex relative">
+                    <div class="w-full lg:mb-0 mb-16 lg:w-1/2 ">
+                        <div class="md:pr-16 m-auto">
+                            <h2 class="text-4xl mb-4 Montserrat">
+                                Desarrollo Web - Frontend
+                            </h2>
+                            <p class="text-md mb-12">
+                                <span class="font-bold block">
+                                        Aprende técnicas de los mejores.
+                                </span> Impartido por instructores con experiencia trabajando en el campo, aprende los conceptos, habilidades y herramientas más demandados.
+                            </p>
+                            <p class="text-md mb-12">
+                                <span class="font-bold">
+                                    Proyectos prácticas para tu portafolio.
+                                </span> Trabaja en proyectos en un entorno de colaboración para aplicar nuevos conceptos y técnicas y desarrollar tus habilidades.
+                            </p>
+                            <p class="text-md mb-12">
+                                <span class="font-bold">
+                                    Requisitos:
+                                </span> Haber completado el curso introducción al desarrollo impartido por BitLab. No es necesario traer tu propio equipo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:block lg:absolute hidden px-8 md:px-0" style="right: 0;">
+                <img src="../public/images/img_aprenderas.png" alt="">
+            </div>
+        </section>
+        <section class="py-24">
+            <div class="container m-auto">
+                <h2 class="Montserrat text-4xl mb-16 md:text-center">
+                    Programa del curso
+                </h2>
+                <div class="flex flex-col xl:flex-row justify-center">
+                    <div class="w-1/2 mx-6">
+                        <ul class="panel-detalle">
+                            <li class="panel-container toggle-hide">
+                                <div class="panel-title">
+                                    <div class="text-xl">
+                                        Semana 1
+                                    </div>
+                                </div>
+                                <div class="panel-content hidden">
+                                    <div class="px-4 pb-0">
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es GitHub?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Instalación y configuración de GitHub
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                DOM
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Introducción a CSS
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Diferencia entre liberia y framework
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Bootstrap
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel-container toggle-hide">
+                                <div class="panel-title">
+                                    <div class="text-xl">
+                                        Semana 2
+                                    </div>
+                                </div>
+                                <div class="panel-content hidden">
+                                    <div class="px-4 pb-0">
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es GitHub?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Instalación y configuración de GitHub
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                DOM
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Introducción a CSS
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Diferencia entre liberia y framework
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Bootstrap
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel-container toggle-hide">
+                                <div class="panel-title">
+                                    <div class="text-xl">
+                                        Semana 3
+                                    </div>
+                                </div>
+                                <div class="panel-content hidden">
+                                    <div class="px-4 pb-0">
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es GitHub?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Instalación y configuración de GitHub
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                DOM
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Introducción a CSS
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Diferencia entre liberia y framework
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Bootstrap
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel-container toggle-hide">
+                                <div class="panel-title">
+                                    <div class="text-xl">
+                                        Semana 4
+                                    </div>
+                                </div>
+                                <div class="panel-content hidden">
+                                    <div class="px-4 pb-0">
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es GitHub?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Instalación y configuración de GitHub
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                DOM
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Introducción a CSS
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Diferencia entre liberia y framework
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Bootstrap
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel-container toggle-hide">
+                                <div class="panel-title">
+                                    <div class="text-xl">
+                                        Semana 5
+                                    </div>
+                                </div>
+                                <div class="panel-content hidden">
+                                    <div class="px-4 pb-0">
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es GitHub?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Instalación y configuración de GitHub
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                DOM
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Introducción a CSS
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Diferencia entre liberia y framework
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Bootstrap
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel-container toggle-hide">
+                                <div class="panel-title">
+                                    <div class="text-xl">
+                                        Semana 6
+                                    </div>
+                                </div>
+                                <div class="panel-content hidden">
+                                    <div class="px-4 pb-0">
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es GitHub?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Instalación y configuración de GitHub
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                DOM
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Introducción a CSS
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Diferencia entre liberia y framework
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Bootstrap
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="w-1/2 mx-6">
+                        <ul class="panel-detalle">
+                            <li class="panel-container toggle-hide">
+                                <div class="panel-title">
+                                    <div class="text-xl">
+                                        Semana 7
+                                    </div>
+                                </div>
+                                <div class="panel-content hidden">
+                                    <div class="px-4 pb-0">
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es GitHub?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Instalación y configuración de GitHub
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                DOM
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Introducción a CSS
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Diferencia entre liberia y framework
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Bootstrap
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel-container toggle-hide">
+                                <div class="panel-title">
+                                    <div class="text-xl">
+                                        Semana 8
+                                    </div>
+                                </div>
+                                <div class="panel-content hidden">
+                                    <div class="px-4 pb-0">
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es GitHub?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Instalación y configuración de GitHub
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                DOM
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Introducción a CSS
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Diferencia entre liberia y framework
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Bootstrap
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel-container toggle-hide">
+                                <div class="panel-title">
+                                    <div class="text-xl">
+                                        Semana 9
+                                    </div>
+                                </div>
+                                <div class="panel-content hidden">
+                                    <div class="px-4 pb-0">
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es GitHub?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Instalación y configuración de GitHub
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                DOM
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Introducción a CSS
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Diferencia entre liberia y framework
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Bootstrap
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel-container toggle-hide">
+                                <div class="panel-title">
+                                    <div class="text-xl">
+                                        Semana 10
+                                    </div>
+                                </div>
+                                <div class="panel-content hidden">
+                                    <div class="px-4 pb-0">
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es GitHub?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Instalación y configuración de GitHub
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                DOM
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Introducción a CSS
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Diferencia entre liberia y framework
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Bootstrap
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel-container toggle-hide">
+                                <div class="panel-title">
+                                    <div class="text-xl">
+                                        Semana 11
+                                    </div>
+                                </div>
+                                <div class="panel-content hidden">
+                                    <div class="px-4 pb-0">
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es GitHub?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Instalación y configuración de GitHub
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                DOM
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Introducción a CSS
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Diferencia entre liberia y framework
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Bootstrap
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel-container toggle-hide">
+                                <div class="panel-title">
+                                    <div class="text-xl">
+                                        Semana 12
+                                    </div>
+                                </div>
+                                <div class="panel-content hidden">
+                                    <div class="px-4 pb-0">
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es GitHub?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Instalación y configuración de GitHub
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                DOM
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Introducción a CSS
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Diferencia entre liberia y framework
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                ¿Qué es un sistema de control de versiones?
+                                            </h4>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4 class="font-bold purple mb-2">
+                                                Bootstrap
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 xl:py-32 flex flex-col lg:flex-row items-center relative">
+            <div class="sm:block  hidden px-8 md:px-0" style="left: 0;">
+                <img src="../public/images/img-proyectofinal.png" alt="">
+            </div>
+            <div class="xl:w-1/2">
+                <div class="w-full lg:mb-0 mb-16">
+                    <div class="max-w-md mx-auto">
+                        <h2 class="text-3xl mb-8 Montserrat">
+                            Proyecto Final
+                        </h2>
+                        <p class="mb-12">
+                            Crearás un sitio web personal, enlazado con proyectos en GitHub, 5 proyectos de Maquetación reales, integración con pasarelas de pago en el proyecto real, completar portafolio web y CV de alta calidad.
+                        </p>
+                        <a href="" class="border-2 button-purple rounded px-16 py-3 text-sm block md:inline text-center">Inscríbete ahora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 pb-32">
+            <div class="container m-auto">
+                <h3 class="text-center text-4xl Montserrat mb-12">
+                    Horarios del curso
+                </h3>
+                <div class="flex flex-col md:flex-row justify-center">
+                    <div class="w-full lg:w-1/2 mb-10 lg:mx-8">
+                        <div class="flex bg-gray-int items-center mx-auto p-8 lg:ml-auto justify-between lg:mx-4">
+                            <div class="w-full">
+                                <h1 class="Montserrat text-2xl">
+                                    Opción 1
+                                </h1>
+                                <p>
+                                    Lunes, Miércoles y Viernes
+                                </p>
+                            </div>
+                            <div class="border-l-2 border-gray-500 pl-6">
+                                <p>
+                                    2:00 p.m - 5:00 p.m
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 mb-10 lg:mx-8">
+                        <div class="flex bg-gray-int items-center mx-auto p-8 lg:ml-auto justify-between lg:mx-4">
+                            <div class="w-full">
+                                <h1 class="Montserrat text-2xl">
+                                    Opción 2
+                                </h1>
+                                <p>
+                                    Sabado
+                                </p>
+                            </div>
+                            <div class="border-l-2 border-gray-500 pl-6">
+                                <p>
+                                    9:00 a.m - 12:00 m.d
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-purple-trainer overflow-hidden" id="section-trainer">
+            <div class="flex items-center flex-col lg:flex-row">
+                <div class="w-auto lg:w-1/2">
+                    <div class="sm:pl-16">
+                        <div class="bg-trainer ml-auto">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 ml-auto lg:px-0 px-16 text-white py-16 ">
+                    <div class="lg:pl-16 md:pr-16 lg:pr-40">
+                        <h3 class="text-3xl mb-4 Montserrat">
+                            Conoce a tu entrenador
+                        </h3>
+                        <h4 class="text-lg font-bold mb-6">
+                            Roxana González
+                        </h4>
+                        <p class="mb-4">
+                            Fullstack Developer y entrenadora en Bitlab. Le gusta poner a prueba su creatividad y conocer nuevas tecnologías.
+                        </p>
+                        <p class="mb-4">
+                            Cuenta con más de seis años programando. Creando sitios web, desde landing pages que nunca se lanzaron, hasta sitios e-commerce de tiendas nacionales como internacionales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bg-black">
+            <div class="container m-auto h:auto md:h-16 flex flex-col md:flex-row justify-between items-center">
+                <img src="../public/images/logo-white.svg" alt="" class="h-6 mt-8 md:mt-0">
+                <p class="text-white m-6 md:mt-6">
+                    Todos los derechos reservados, 2019 © BITLAB
+                </p>
+                <div class="flex mb-4 md:my-0 items-center">
+                    <span class="text-white text-lg mr-4 fas fa-phone" style="color:white">
+                    </span>
+                    <a href="" class="text-white mr-3">2512-2274 / 2200-4519</a>
+                    <span class="text-white text-lg mr-4 fas fa-facebook">
+                                </span>
+                    <span class="text-white text-lg mr-4 fas fa-instagram">
+                                </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="../public/scripts/scripts.min.js"></script>
+</body>
+
+</html>

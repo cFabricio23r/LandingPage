@@ -65,3 +65,85 @@ check-cont:hover input ~ .check-kmark
     border-color: #4849b0
     a
         color: #4849b0
+
+
+#course-de
+    background-color: #271777
+    padding-top: 160px
+    padding-bottom: 200px
+
+#aprenderas-hero
+    background-image: url(../images/aprenderas-bg.png)
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: start
+    @media screen and(max-width: 1200px) 
+        background-size: cover
+        background-position: center
+    
+.panel-detalle
+    box-shadow: none
+    .panel-container
+        padding-left: 2px
+        border-top: none !important
+        border-left: 1px solid #e2e2e2
+        position: relative
+        padding-bottom: 40px
+        &:after 
+            background-color: #481ae7
+            content: ''
+            display: block
+            left: -0.4em
+            height: 11px
+            position: absolute
+            top: 1.5em
+            width: 11px
+        .panel-title
+            display: flex
+            cursor: pointer
+            align-items: center
+            position: relative
+            padding: 14px 26px
+            min-height: 48px
+        .panel-content
+            transition: 0.8s all ease
+
+
+.bg-purple-trainer
+    background-color: #4d05b1
+    &:hover
+        .bg-trainer
+            animation: trainer-in 0.4s steps(5)
+            animation-iteration-count: 1
+            animation-fill-mode: forwards
+            transition: 0.9s all ease
+
+
+.bg-trainer
+    background-image: url(../images/rox.jpg)    
+    z-index: 100
+    height: 600px
+    width: 600px
+    background-position: left
+    background-repeat: no-repeat
+    background-size: cover
+    animation: trainer-out 0.4s steps(5)
+    animation-iteration-count: 1
+    animation-fill-mode: forwards
+    transition: 0.8s all ease
+
+@keyframes trainer-in 
+    0% 
+        background-position: left center
+  
+    100% 
+        background-position: right center
+  
+
+@keyframes trainer-out 
+    100% 
+        background-position: left center
+  
+    0% 
+        background-position: right center
+  
