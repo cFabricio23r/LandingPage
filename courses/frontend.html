@@ -8,10 +8,10 @@
     <title>Bitlab - Digital Skills Academy</title>
     <meta name="description" content="Sitio web de academia con cursos web">
     <meta name="keywords">
-
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
     <link href="../public/styles/app.min.css" rel="stylesheet">
     <link data-n-head="true" rel="icon" type="image/png" href="../public/images/favicon.png">
 </head>
@@ -56,24 +56,61 @@
                         ¿Qué deseas
                         <br> conocer?
                     </h3>
-                    <a class="block p-6 text-xl md:border-b-4 md:border-transparent hover:border-teal-300" href="">
+                    <a class="block p-6 text-xl md:border-b-4 md:border-transparent hover:border-teal-300" href="../partner.html">
                         Aliados
                     </a>
-                    <a class="block p-6 text-xl md:border-b-4 md:border-transparent hover:border-teal-300" href="">
+                    <a class="block p-6 text-xl md:border-b-4 md:border-transparent hover:border-teal-300" href="../courses.html">
                         Cursos
                     </a>
-                    <a class="block p-6 text-xl md:border-b-4 md:border-transparent hover:border-teal-300" href="">
+                    <a class="block p-6 text-xl md:border-b-4 md:border-transparent hover:border-teal-300" href="../workshop.html">
                         Talleres
                     </a>
-                    <a class="block p-6 text-xl md:border-b-4 md:border-transparent hover:border-teal-300" href="">
+                    <a class="block p-6 text-xl md:border-b-4 md:border-transparent hover:border-teal-300" href="../scolarships.html">
                         Becas
                     </a>
-                    <a class="block p-6 text-xl md:border-b-4 md:border-transparent hover:border-teal-300" href="">
+                    <a class="block p-6 text-xl md:border-b-4 md:border-transparent hover:border-teal-300" href="../skills.html">
                         Eventos
                     </a>
 
                 </div>
 
+            </div>
+        </section>
+        <section id="navbar-course" class="hidden">
+            <div class="w-full z-1000 py-2 bg-white text-black fixed lg:flex hidden">
+                <div class="container m-auto h-auto md:h-16 flex flex-row justify-between items-center">
+                    <div class="flex items-center">
+                        <a href="../courses.html" class="mr-3">
+                            <img src="../public/images/icon-nav.svg" alt="">
+                        </a>
+                        <div>
+                            <p class="Montserrat font-bold text-lg mb-1">
+                                Desarrollo Web - Frontend
+                            </p>
+                            <p class="text-sm Montserrat text-black opacity-50">
+                                Desarrollo de Software
+                            </p>
+                        </div>
+                    </div>
+                    <div id="menu-course" class="my-4 md:my-0 items-center hidden md:flex menu-items text-sm">
+                        <a class="no-underline mx-6 line-h move-a" href="#how">
+                            ¿Cómo aprenderás?
+                        </a>
+                        <a class="no-underline mx-6 line-h move-a" href="#program">
+                            Programa      
+                        </a>
+                        <a class="no-underline mx-6 line-h move-a" href="#schedule">
+                            Horario
+                        </a>
+                        <a class="no-underline mx-6 line-h move-a" href="#trainer">
+                            Entrenador
+                        </a>
+                        <a class="no-underline mx-6 line-h move-a" href="#pago">
+                            Pago
+                        </a>
+                        <a href="https://llenaelformulario.typeform.com/to/Wsq11V" target="_blank" class="border-2 button-purple rounded px-8 py-1 text-sm block md:inline mx-4">Inscríbite Ahora</a>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="course-de" class="flex flex-col lg:flex-row items-center relative">
@@ -109,7 +146,7 @@
                 <img src="../public/images/img_workshop and course.png" alt="">
             </div>
         </section>
-        <section class="py-40 flex flex-col lg:flex-row items-center relative" id="aprenderas-hero">
+        <section id="how" class="py-40 flex flex-col lg:flex-row items-center relative" id="aprenderas-hero">
             <div class="container m-auto">
                 <div class="flex relative">
                     <div class="w-full lg:mb-0 mb-16 lg:w-1/2 ">
@@ -140,7 +177,7 @@
                 <img src="../public/images/img_aprenderas.png" alt="">
             </div>
         </section>
-        <section class="py-24">
+        <section id="program" class="py-24">
             <div class="container m-auto">
                 <h2 class="Montserrat text-4xl mb-16 md:text-center">
                     Programa del curso
@@ -771,7 +808,7 @@
                 </div>
             </div>
         </section>
-        <section class="py-24 xl:py-32 flex flex-col lg:flex-row items-center relative">
+        <section id="final" class="py-24 xl:py-32 flex flex-col lg:flex-row items-center relative">
             <div class="sm:block  hidden px-8 md:px-0" style="left: 0;">
                 <img src="../public/images/img-proyectofinal.png" alt="">
             </div>
@@ -784,12 +821,12 @@
                         <p class="mb-12">
                             Crearás un sitio web personal, enlazado con proyectos en GitHub, 5 proyectos de Maquetación reales, integración con pasarelas de pago en el proyecto real, completar portafolio web y CV de alta calidad.
                         </p>
-                        <a href="" class="border-2 button-purple rounded px-16 py-3 text-sm block md:inline text-center">Inscríbete ahora</a>
+                        <a href="https://llenaelformulario.typeform.com/to/Wsq11V" target="_blank" class="border-2 button-purple rounded px-16 py-3 text-sm block md:inline text-center">Inscríbete ahora</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="py-24 pb-32">
+        <section id="schedule" class="py-24 pb-32">
             <div class="container m-auto">
                 <h3 class="text-center text-4xl Montserrat mb-12">
                     Horarios del curso
@@ -832,7 +869,7 @@
                 </div>
             </div>
         </section>
-        <section class="bg-purple-trainer overflow-hidden" id="section-trainer">
+        <section id="trainer" class="bg-purple-trainer overflow-hidden" id="section-trainer">
             <div class="flex items-center flex-col lg:flex-row">
                 <div class="w-auto lg:w-1/2">
                     <div class="sm:pl-16">
@@ -858,6 +895,133 @@
                 </div>
             </div>
         </section>
+        <section id="slide" class="py-24 bg-gray-int mb-16 text-center">
+            <h2 class="Montserrat mb-12 px-4 font-bold text-3xl">
+                Testimonios de profesionales del rubro
+            </h2>
+            <div class="flex justify-center">
+                <section class="w-4/5 xl:w-1/2 bg-gray-int">
+                    <div class="carousel relative">
+                        <div class="carousel-inner relative overflow-hidden w-full">
+                            <!--Slide 1-->
+                            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                            <div class="carousel-item absolute opacity-0 flex flex-row items-center justify-center h-auto">
+                                <div class="bg-gray-int text-black flex flex-col justify-center items-center montserrat">
+                                    <p class="italic mb-6 text-lg font-medium">
+                                        Trabajo remoto en cualquier lugar, programo desde los 17 años.
+                                    </p>
+                                    <p class="">
+                                        Luis Mendoza - Desarrollador mobile
+                                    </p>
+                                </div>
+                            </div>
+                            <label for="carousel-3" class="prev control-1 w-10 h-10 -ml-10 md:-ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                            <label for="carousel-2" class="next control-1 w-10 h-10 -mr-10 md:-mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                            <!--Slide 2-->
+                            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                            <div class="carousel-item absolute opacity-0 flex flex-row items-center justify-center h-auto" style="">
+                                <div class="bg-gray-int text-black flex flex-col justify-center items-center montserrat">
+                                    <p class="italic mb-6 text-lg font-medium">
+                                        La programación me enseñó a que existen muchas maneras de resolver un problema, a pensar de forma abstracta, y que el único límite es la imaginación, programo desde los 9 años. </p>
+                                    <p class="">
+                                        John Cruz - Full Stack Developer
+                                    </p>
+                                </div>
+                            </div>
+                            <label for="carousel-1" class="prev control-2 w-10 h-10 -ml-10 md:-ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                            <label for="carousel-3" class="next control-2 w-10 h-10 -mr-10 md:-mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                            <!--Slide 3-->
+                            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                            <div class="carousel-item absolute opacity-0 flex flex-row items-center justify-center h-auto ">
+                                <div class="bg-gray-int text-black flex flex-col justify-center items-center montserrat">
+                                    <p class="italic mb-6 text-lg font-medium">
+                                        Siempre quise crear cosas y la programación fue una manera en la cual podía plasmar las ideas que tenía en mi mente para crear soluciones a problemas y juegos. Programo desde los 15 años. </p>
+                                    <p class="">
+                                        Carlos Campos - Full Stack Developer
+                                    </p>
+                                </div>
+                            </div>
+                            <label for="carousel-2" class="prev control-3 w-10 h-10 -ml-10 md:-ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                            <label for="carousel-1" class="next control-3 w-10 h-10 -mr-10 md:-mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+                            <br><br>
+                            <!-- Add additional indicators for each slide-->
+                            <ol class="carousel-indicators">
+                                <li class="inline-block mr-3">
+                                    <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-black">•</label>
+                                </li>
+                                <li class="inline-block mr-3">
+                                    <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-black">•</label>
+                                </li>
+                                <li class="inline-block mr-3">
+                                    <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-black">•</label>
+                                </li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="pago" class="py-4">
+            <div class="container m-auto">
+                <div class="flex flex-col md:flex-row xl:items-center mb-8 xl:pl-32 pl-0">
+                    <h3 class="Montserrat mb-4 xl:mr-12 md:mb-0 text-4xl">
+                        Formas de pago
+                    </h3>
+                    <p>
+                        Puedes pagar con tarjeta, cheque y por
+                        <br> transferencia bancaria.
+                    </p>
+                </div>
+                <div class="flex items-center flex-col md:flex-row bg-gray-int p-8 xl:ml-32 xl:mr-32 ml-0 mr-0">
+                    <div class="w-full flex items-center md:w-2/12 md:justify-center md:mb-0 mb-4">
+                        <p>
+                            Matrícula gratis por
+                            <br> tiempo limitado
+                        </p>
+                    </div>
+                    <div class="w-full items-center md:w-1/12 md:justify-center md:flex hidden">
+                        <img src="../public/images/Oval.png" alt="">
+                    </div>
+                    <div class="w-full flex items-center md:w-2/12 md:justify-center md:mb-0 mb-4">
+                        <span class="Montserrat text-3xl mr-2">$200</span>mensual
+                    </div>
+                    <div class="w-full  items-center md:w-1/12 md:justify-center md:flex hidden">
+                        <img src="../public/images/Oval.png" alt="">
+                    </div>
+                    <div class="w-full flex items-center md:w-3/12 md:justify-center md:mb-0 mb-4">
+                        <span class="Montserrat text-3xl mr-2">%10</span> off en 1 solo pago
+                    </div>
+                    <div class="w-full  items-center md:w-1/12 md:justify-center md:flex hidden">
+                        <img src="../public/images/Oval.png" alt="">
+                    </div>
+                    <div class="w-full flex items-center md:w-2/12 md:justify-center">
+                        <span class="Montserrat text-3xl mr-2">%5</span> off en 2 pagos
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="location" class="pt-40 py-32 mb-16 flex flex-col my-16 mb-32 lg:flex-row items-center">
+            <div class="container m-auto">
+                <div class="flex relative">
+                    <div class="w-full mb-16 lg:mb-0 lg:px-0 md:px-8 lg:w-1/2">
+                        <div class="pr-16">
+                            <h3 class="text-4xl mb-4 xl:mr-12 Montserrat">
+                                Nuestra ubicación
+                            </h3>
+                            <p class="mb-8 pr-8 break-normal">
+                                9 Calle Poniente, 99 Avenida Norte #548, Colonia Escalón, El Salvador
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-cont sm:block lg:absolute md:px-0">
+                <div id="map" style="position: relative; overflow: hidden;"></div>
+            </div>
+        </section>
         <div class="bg-black">
             <div class="container m-auto h:auto md:h-16 flex flex-col md:flex-row justify-between items-center">
                 <img src="../public/images/logo-white.svg" alt="" class="h-6 mt-8 md:mt-0">
@@ -866,20 +1030,212 @@
                 </p>
                 <div class="flex mb-4 md:my-0 items-center">
                     <span class="text-white text-lg mr-4 fas fa-phone" style="color:white">
-                    </span>
-                    <a href="" class="text-white mr-3">2512-2274 / 2200-4519</a>
-                    <span class="text-white text-lg mr-4 fas fa-facebook">
-                                </span>
-                    <span class="text-white text-lg mr-4 fas fa-instagram">
-                                </span>
+                        </span>
+                    <a class="text-white mr-3">2512-2274 / 2200-4519</a>
+                    <a href="https://www.facebook.com/BitLabsv" target="_blank">
+                        <span class="text-white text-lg mr-4 fab fa-facebook-f"></span>
+                    </a>
+                    <a href="https://www.instagram.com/bitlabsv/" target="_blank">
+                        <span class="text-white text-lg mr-4 fab fa-instagram"></span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        function initMap() {
+            // Styles a map in night mode.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 13.7087593,
+                    lng: -89.2470976
+                },
+                zoom: 19,
+                styles: [{
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#1d2c4d"
+                    }]
+                }, {
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#8000ff"
+                    }]
+                }, {
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#8ec3b9"
+                    }]
+                }, {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "color": "#1a3646"
+                    }]
+                }, {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#64779e"
+                    }]
+                }, {
+                    "featureType": "administrative.province",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#4b6878"
+                    }]
+                }, {
+                    "featureType": "landscape",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#5500aa"
+                    }]
+                }, {
+                    "featureType": "landscape.man_made",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#334e87"
+                    }]
+                }, {
+                    "featureType": "landscape.natural",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#023e58"
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#283d6a"
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#00ffff"
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#6f9ba5"
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "color": "#1d2c4d"
+                    }]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#023e58"
+                    }]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#3C7680"
+                    }]
+                }, {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#304a7d"
+                    }]
+                }, {
+                    "featureType": "road",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#7e00fd"
+                    }, {
+                        "weight": 8
+                    }]
+                }, {
+                    "featureType": "road",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#7e00fd"
+                    }, {
+                        "weight": 4.5
+                    }]
+                }, {
+                    "featureType": "road",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#00ffff"
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#2c6675"
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#255763"
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#b0d5ce"
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "color": "#023e58"
+                    }]
+                }, {
+                    "featureType": "transit",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#98a5be"
+                    }]
+                }, {
+                    "featureType": "transit",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "color": "#1d2c4d"
+                    }]
+                }, {
+                    "featureType": "transit.line",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#283d6a"
+                    }]
+                }, {
+                    "featureType": "transit.station",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#3a4762"
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#0e1626"
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "color": "#4e6d70"
+                    }]
+                }]
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDM2wkGPpZ30zy8502cjTMrI166Je04e-w&amp;callback=initMap"></script>
+
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="../public/scripts/scripts.min.js"></script>
+    <script src="../public/scripts/js.min.js"></script>
 </body>
 
 </html>

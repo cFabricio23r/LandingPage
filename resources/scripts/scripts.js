@@ -15,6 +15,15 @@ $(document).ready(function() {
             $("#Toggle").find("span").css("background", "white")
 
         }
+        if ($(document).scrollTop() > 400) {
+            $("#navbar-course").removeClass("hidden");
+            if ($("#navbar-course").hasClass("hidden")) {
+                $("#navbar").addClass("hidden");
+            }
+        } else {
+            $("#navbar-course").addClass("hidden");
+            $("#navbar").removeClass("hidden");
+        }
     });
     $("#Toggle").click(function() {
         $("#text-nav").removeClass("hidden")
@@ -162,5 +171,21 @@ $(document).ready(function() {
             $(this).find("div.hidden-no").addClass("hidden");
             $(this).find("div.hidden").removeClass("hidden-no");
         }
+    });
+
+
+    //go to a div
+    $('.move-a').on('click', function(event) {
+
+        var target = $(this.getAttribute('href'));
+        var navbar = $("#navbar-course").height();
+        var scrollToPosition = $(target).offset().top - navbar;
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: scrollToPosition
+            }, 1000);
+        }
+
     });
 });
